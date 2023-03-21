@@ -1,0 +1,27 @@
+// description block
+	
+.description
+	position: absolute
+	top: 20vh
+	left: 8vw
+	max-width: 24vw
+	font-size: calc( $sizeIndex * 0.8 )
+	transition: opacity $transition, transform $transition
+	& > p
+		opacity: 0.9
+		transition: transform $transition
+		transition-duration: 3s
+	&.hidden 
+		opacity: 0
+		transform: translateY(5vh)
+		& p 
+			transform: translateY(2vh)
+
+
+.logo
+	display: inline-block 
+	font-size: calc( $sizeIndex * 3.6 )
+	font-weight: 900
+	background: linear-gradient(45deg, DarkMagenta, Tomato, Violet)
+	-webkit-background-clip: text
+	-webkit-text-fill-color: transparent

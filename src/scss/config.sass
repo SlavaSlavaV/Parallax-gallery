@@ -1,0 +1,56 @@
+// USER VARIABLES SECTION
+$txtcolor: #f3f3f3 // Text Color
+$bg: #070707// Background Color
+$txtFont: "Raleway", sans-serif // Text Font Family
+$sizeIndex: calc(1vw + 1vh)
+$fontWeight: 300 // Body Font Weight
+$lineHeight: 1.8 // Document Line Height
+$transition: .75s cubic-bezier(.2, .6, 0, 1)
+$systemFont: -apple-system, BlinkMacSystemFont, Roboto, Arial, sans-serif // System Font Family
+
+// FONTS LOAD SECTION
+
+@import "fonts"
+
+// IMPORT SECTION
+
+@import 'node_modules/normalize.css/normalize'
+@import 'node_modules/swiper/swiper-bundle'
+
+// GENERAL DOCUMENT STYLES
+
+*,
+*::before,
+*::after
+	box-sizing: border-box
+
+html, body 
+	width: 100%
+	height: 100%
+
+img
+	max-width: 100%
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	font-family: $txtFont
+
+p 
+	font-family: $txtFont
+	font-weight: $fontWeight
+
+body
+	width: 100%
+	height: 100%
+	min-height: 100vh
+	overflow: hidden
+	font-family: $txtFont
+	font-weight: $fontWeight
+	font-size: calc( $sizeIndex * 0.9 )
+	line-height: $lineHeight
+	color: $txtcolor
+	background-color: $bg
